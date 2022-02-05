@@ -1,0 +1,68 @@
+.formulario{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding-left:50px;
+	padding-top:50px;
+	width:550px;
+	padding-bottom:50px;
+}
+
+.formulario-texto{
+	width:120px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:right;
+	padding-right:10px;
+	margin-bottom:8px;
+	font-size:12px;
+}
+
+.formulario-campo{
+	width:400px; 
+	float:left;
+	margin-bottom:8px;
+}
+
+.textfield-nome{
+	width:300px;
+}
+
+.textfield-ddd{
+	width:20px;
+}
+
+.textfield-telefone{
+	width:100px;
+}
+
+.btn-contato-enviar{
+	width: 59px;
+	height:18px;
+	border:solid 0px;
+	font-family:Calibri, Arial, sans-serif;
+	color:#fff;
+	font-weight:bold;
+	margin-top:10px;
+	background-image:url(../img/btn.jpg);
+	font-size:12px;
+}
+
+.btn-contato-reset{
+	margin-left:170px;
+	width: 59px;
+	height:18px;
+	font-family:Calibri, Arial, sans-serif;
+	color:#fff;
+	margin-top:10px;
+	font-weight:bold;
+	background-image:url(../img/btn.jpg);
+	border: solid 0px;
+	font-size:12px;
+}
+
+.box-campo{
+	width:400px; 
+	float:left;
+	padding-bottom:8px;
+}

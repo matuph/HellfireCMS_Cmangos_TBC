@@ -1,0 +1,847 @@
+/*
+Item Name : Awesome gradients. Buttons
+Version : 1.0
+*/
+
+/*
+TABLE OF CONTENTS
+
+1. GENERAL STYLING
+2. GHOST BUTTONS
+3. CLASSIC BUTTONS
+4. COLORS
+5. CUSTOM COLORS
+*/
+
+/*--------------------------------------------------------------------------*/
+/* 1. GENERAL STYLING */
+/*--------------------------------------------------------------------------*/
+
+.gradient-ghost-btn.full-width, .gradient-ghost-btn-lg.full-width,
+.gradient-btn.full-width, .gradient-btn-lg.full-width {
+    width: 100% !important;
+}
+
+/*--------------------------------------------------------------------------*/
+/* 2. GHOST BUTTONS */
+/*--------------------------------------------------------------------------*/
+
+.gradient-ghost-btn,
+.gradient-ghost-btn-lg {
+    background: none;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 15px 62px;
+    color: #fff !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    outline: 0;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    letter-spacing: 3px;
+    border-left: 2px solid #F17C35;
+    border-right: 2px solid #E2336E;
+    display: inline-block;
+    background-position: 0 100%, 0 0;
+    background-repeat: no-repeat;
+    background-size: 200% 2px;
+    background-image: -webkit-linear-gradient(left, #F17C35 0%, #E2336E 50%, #F17C35 100%),
+    -webkit-linear-gradient(left, #F17C35 0%, #E2336E 50%, #F17C35 100%);
+    background-image: linear-gradient(to right, #F17C35 0%, #E2336E 50%, #F17C35 100%),
+    linear-gradient(to right, #F17C35 0%, #E2336E 50%, #F17C35 100%);
+    transition: background-position 0.7s ease-in-out, border-color 0.7s ease-in-out;
+    -moz-transition: background-position 0.7s ease-in-out, border-color 0.7s ease-in-out;
+    -ms-transition: background-position 0.7s ease-in-out, border-color 0.7s ease-in-out;
+    -o-transition: background-position 0.7s ease-in-out, border-color 0.7s ease-in-out;
+    -webkit-transition: background-position 0.7s ease-in-out, border-color 0.7s ease-in-out;
+}
+
+.gradient-ghost-btn-lg {
+    border-left: 4px solid #F17C35;
+    border-right: 4px solid #E2336E;
+    background-size: 200% 4px;
+    text-decoration: none !important;
+}
+
+.gradient-ghost-btn:hover {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #E2336E;
+    border-right: 2px solid #F17C35;
+}
+
+.gradient-ghost-btn-lg:hover {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #E2336E;
+    border-right: 4px solid #F17C35;
+}
+
+.gradient-ghost-btn.live {
+    -webkit-animation: gradient-ghost-btn-animation 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation 3s ease infinite;
+    animation: gradient-ghost-btn-animation 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live {
+    -webkit-animation: gradient-ghost-btn-lg-animation 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #F17C35;
+        border-right: 2px solid #E2336E;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #E2336E;
+        border-right: 2px solid #F17C35;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #F17C35;
+        border-right: 2px solid #E2336E;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #F17C35;
+        border-right: 4px solid #E2336E;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #E2336E;
+        border-right: 4px solid #F17C35;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #F17C35;
+        border-right: 4px solid #E2336E;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+/* 3. CLASSIC BUTTONS */
+/*--------------------------------------------------------------------------*/
+
+.gradient-btn {
+    background: none;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 12px;
+    color: #fff !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    outline: 0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    letter-spacing: 3px;
+    display: inline-block;
+    background: #F17C35;
+    background: -moz-linear-gradient(45deg, #F17C35 0%, #E2336E 44%, #E2336E 56%, #F17C35 100%);
+    background: -webkit-linear-gradient(45deg, #F17C35 0%, #E2336E 44%, #E2336E 56%, #F17C35 100%);
+    background: linear-gradient(45deg, #F17C35 0%, #E2336E 44%, #E2336E 56%, #F17C35 100%);
+    background-size: 150% 150%;
+    transition: background-position 0.7s ease-in-out;
+    -moz-transition: background-position 0.7s ease-in-out;
+    -ms-transition: background-position 0.7s ease-in-out;
+    -o-transition: background-position 0.7s ease-in-out;
+    -webkit-transition: background-position 0.7s ease-in-out;
+    margin-top: 10px;
+}
+
+.gradient-btn:hover {
+    background-position: 100% 50%;
+}
+
+.gradient-btn.live {
+    -webkit-animation: btn-gradient-animation 3s ease-in-out infinite;
+    -moz-animation: btn-gradient-animation 3s ease-in-out infinite;
+    animation: btn-gradient-animation 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes btn-gradient-animation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+/* 4. COLORS */
+/*--------------------------------------------------------------------------*/
+
+/*
+    color scheme: palette1
+    1. #35C9FF    2. #27D853
+*/
+
+.gradient-btn.gradient-color-palette1 {
+    background: #35C9FF;
+    background: -moz-linear-gradient(45deg, #35C9FF 0%, #27D853 44%, #27D853 56%, #35C9FF 100%);
+    background: -webkit-linear-gradient(45deg, #35C9FF 0%, #27D853 44%, #27D853 56%, #35C9FF 100%);
+    background: linear-gradient(45deg, #35C9FF 0%, #27D853 44%, #27D853 56%, #35C9FF 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette1 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette1,
+.gradient-ghost-btn-lg.gradient-color-palette1 {
+    border-left: 2px solid #35C9FF;
+    border-right: 2px solid #27D853;
+    background-image: -webkit-linear-gradient(left, #35C9FF 0%, #27D853 50%, #35C9FF 100%),
+    -webkit-linear-gradient(left, #35C9FF 0%, #27D853 50%, #35C9FF 100%);
+    background-image: linear-gradient(to right, #35C9FF 0%, #27D853 50%, #35C9FF 100%),
+    linear-gradient(to right, #35C9FF 0%, #27D853 50%, #35C9FF 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette1 {
+    border-radius: 2px;
+    border-left: 4px solid #35C9FF;
+    border-right: 4px solid #27D853;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette1 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #27D853;
+    border-right: 2px solid #35C9FF;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette1 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #27D853;
+    border-right: 4px solid #35C9FF;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette1 {
+    -webkit-animation: gradient-ghost-btn-animation-palette1 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette1 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette1 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette1 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette1 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette1 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette1 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette1 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #35C9FF;
+        border-right: 2px solid #27D853;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #27D853;
+        border-right: 2px solid #35C9FF;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #35C9FF;
+        border-right: 2px solid #27D853;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette1 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #35C9FF;
+        border-right: 4px solid #27D853;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #27D853;
+        border-right: 4px solid #35C9FF;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #35C9FF;
+        border-right: 4px solid #27D853;
+    }
+}
+
+/*
+    color scheme: palette2
+    1. #E2336E    2. #35C9FF
+*/
+
+.gradient-btn.gradient-color-palette2 {
+    background: #E2336E;
+    background: -moz-linear-gradient(45deg, #E2336E 0%, #35C9FF 44%, #35C9FF 56%, #E2336E 100%);
+    background: -webkit-linear-gradient(45deg, #E2336E 0%, #35C9FF 44%, #35C9FF 56%, #E2336E 100%);
+    background: linear-gradient(45deg, #E2336E 0%, #35C9FF 44%, #35C9FF 56%, #E2336E 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette2 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette2,
+.gradient-ghost-btn-lg.gradient-color-palette2 {
+    border-left: 2px solid #E2336E;
+    border-right: 2px solid #35C9FF;
+    background-image: -webkit-linear-gradient(left, #E2336E 0%, #35C9FF 50%, #E2336E 100%),
+    -webkit-linear-gradient(left, #E2336E 0%, #35C9FF 50%, #E2336E 100%);
+    background-image: linear-gradient(to right, #E2336E 0%, #35C9FF 50%, #E2336E 100%),
+    linear-gradient(to right, #E2336E 0%, #35C9FF 50%, #E2336E 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette2 {
+    border-radius: 2px;
+    border-left: 4px solid #E2336E;
+    border-right: 4px solid #35C9FF;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette2 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #35C9FF;
+    border-right: 2px solid #E2336E;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette2 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #35C9FF;
+    border-right: 4px solid #E2336E;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette2 {
+    -webkit-animation: gradient-ghost-btn-animation-palette2 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette2 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette2 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette2 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette2 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette2 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette2 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette2 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #E2336E;
+        border-right: 2px solid #35C9FF;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #35C9FF;
+        border-right: 2px solid #E2336E;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #E2336E;
+        border-right: 2px solid #35C9FF;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette2 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #E2336E;
+        border-right: 4px solid #35C9FF;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #35C9FF;
+        border-right: 4px solid #E2336E;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #E2336E;
+        border-right: 4px solid #35C9FF;
+    }
+}
+
+/*
+    color scheme: palette3
+    1. #EF3636    2. #E2E734
+*/
+
+.gradient-btn.gradient-color-palette3 {
+    background: #EF3636;
+    background: -moz-linear-gradient(45deg, #EF3636 0%, #E2E734 44%, #E2E734 56%, #EF3636 100%);
+    background: -webkit-linear-gradient(45deg, #EF3636 0%, #E2E734 44%, #E2E734 56%, #EF3636 100%);
+    background: linear-gradient(45deg, #EF3636 0%, #E2E734 44%, #E2E734 56%, #EF3636 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette3 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette3,
+.gradient-ghost-btn-lg.gradient-color-palette3 {
+    border-left: 2px solid #EF3636;
+    border-right: 2px solid #E2E734;
+    background-image: -webkit-linear-gradient(left, #EF3636 0%, #E2E734 50%, #EF3636 100%),
+    -webkit-linear-gradient(left, #EF3636 0%, #E2E734 50%, #EF3636 100%);
+    background-image: linear-gradient(to right, #EF3636 0%, #E2E734 50%, #EF3636 100%),
+    linear-gradient(to right, #EF3636 0%, #E2E734 50%, #EF3636 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette3 {
+    border-radius: 2px;
+    border-left: 4px solid #EF3636;
+    border-right: 4px solid #E2E734;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette3 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #E2E734;
+    border-right: 2px solid #EF3636;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette3 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #E2E734;
+    border-right: 4px solid #EF3636;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette3 {
+    -webkit-animation: gradient-ghost-btn-animation-palette3 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette3 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette3 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette3 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette3 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette3 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette3 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette3 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #EF3636;
+        border-right: 2px solid #E2E734;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #E2E734;
+        border-right: 2px solid #EF3636;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #EF3636;
+        border-right: 2px solid #E2E734;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette3 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #EF3636;
+        border-right: 4px solid #E2E734;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #E2E734;
+        border-right: 4px solid #EF3636;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #EF3636;
+        border-right: 4px solid #E2E734;
+    }
+}
+
+/*
+    color scheme: palette4
+    1. #3636E5    2. #EF3636
+*/
+
+.gradient-btn.gradient-color-palette4 {
+    background: #3636E5;
+    background: -moz-linear-gradient(45deg, #3636E5 0%, #EF3636 44%, #EF3636 56%, #3636E5 100%);
+    background: -webkit-linear-gradient(45deg, #3636E5 0%, #EF3636 44%, #EF3636 56%, #3636E5 100%);
+    background: linear-gradient(45deg, #3636E5 0%, #EF3636 44%, #EF3636 56%, #3636E5 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette4 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette4,
+.gradient-ghost-btn-lg.gradient-color-palette4 {
+    border-left: 2px solid #3636E5;
+    border-right: 2px solid #EF3636;
+    background-image: -webkit-linear-gradient(left, #3636E5 0%, #EF3636 50%, #3636E5 100%),
+    -webkit-linear-gradient(left, #3636E5 0%, #EF3636 50%, #3636E5 100%);
+    background-image: linear-gradient(to right, #3636E5 0%, #EF3636 50%, #3636E5 100%),
+    linear-gradient(to right, #3636E5 0%, #EF3636 50%, #3636E5 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette4 {
+    border-radius: 2px;
+    border-left: 4px solid #3636E5;
+    border-right: 4px solid #EF3636;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette4 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #EF3636;
+    border-right: 2px solid #3636E5;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette4 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #EF3636;
+    border-right: 4px solid #3636E5;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette4 {
+    -webkit-animation: gradient-ghost-btn-animation-palette4 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette4 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette4 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette4 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette4 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette4 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette4 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette4 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #3636E5;
+        border-right: 2px solid #EF3636;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #EF3636;
+        border-right: 2px solid #3636E5;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #3636E5;
+        border-right: 2px solid #EF3636;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette4 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #3636E5;
+        border-right: 4px solid #EF3636;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #EF3636;
+        border-right: 4px solid #3636E5;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #3636E5;
+        border-right: 4px solid #EF3636;
+    }
+}
+
+/*
+    color scheme: palette5
+    1. #E2E734    2. #35C9FF
+*/
+
+.gradient-btn.gradient-color-palette5 {
+    background: #E2E734;
+    background: -moz-linear-gradient(45deg, #E2E734 0%, #35C9FF 44%, #35C9FF 56%, #E2E734 100%);
+    background: -webkit-linear-gradient(45deg, #E2E734 0%, #35C9FF 44%, #35C9FF 56%, #E2E734 100%);
+    background: linear-gradient(45deg, #E2E734 0%, #35C9FF 44%, #35C9FF 56%, #E2E734 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette5 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette5,
+.gradient-ghost-btn-lg.gradient-color-palette5 {
+    border-left: 2px solid #E2E734;
+    border-right: 2px solid #35C9FF;
+    background-image: -webkit-linear-gradient(left, #E2E734 0%, #35C9FF 50%, #E2E734 100%),
+    -webkit-linear-gradient(left, #E2E734 0%, #35C9FF 50%, #E2E734 100%);
+    background-image: linear-gradient(to right, #E2E734 0%, #35C9FF 50%, #E2E734 100%),
+    linear-gradient(to right, #E2E734 0%, #35C9FF 50%, #E2E734 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette5 {
+    border-radius: 2px;
+    border-left: 4px solid #E2E734;
+    border-right: 4px solid #35C9FF;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette5 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #35C9FF;
+    border-right: 2px solid #E2E734;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette5 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #35C9FF;
+    border-right: 4px solid #E2E734;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette5 {
+    -webkit-animation: gradient-ghost-btn-animation-palette5 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette5 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette5 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette5 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette5 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette5 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette5 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette5 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #E2E734;
+        border-right: 2px solid #35C9FF;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #35C9FF;
+        border-right: 2px solid #E2E734;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #E2E734;
+        border-right: 2px solid #35C9FF;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette5 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #E2E734;
+        border-right: 4px solid #35C9FF;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #35C9FF;
+        border-right: 4px solid #E2E734;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #E2E734;
+        border-right: 4px solid #35C9FF;
+    }
+}
+
+/*
+    color scheme: palette6
+    1. #35C9FF    2. #7537E7
+*/
+
+.gradient-btn.gradient-color-palette6 {
+    background: #35C9FF;
+    background: -moz-linear-gradient(45deg, #35C9FF 0%, #7537E7 44%, #7537E7 56%, #35C9FF 100%);
+    background: -webkit-linear-gradient(45deg, #35C9FF 0%, #7537E7 44%, #7537E7 56%, #35C9FF 100%);
+    background: linear-gradient(45deg, #35C9FF 0%, #7537E7 44%, #7537E7 56%, #35C9FF 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette6 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette6,
+.gradient-ghost-btn-lg.gradient-color-palette6 {
+    border-left: 2px solid #35C9FF;
+    border-right: 2px solid #7537E7;
+    background-image: -webkit-linear-gradient(left, #35C9FF 0%, #7537E7 50%, #35C9FF 100%),
+    -webkit-linear-gradient(left, #35C9FF 0%, #7537E7 50%, #35C9FF 100%);
+    background-image: linear-gradient(to right, #35C9FF 0%, #7537E7 50%, #35C9FF 100%),
+    linear-gradient(to right, #35C9FF 0%, #7537E7 50%, #35C9FF 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette6 {
+    border-radius: 2px;
+    border-left: 4px solid #35C9FF;
+    border-right: 4px solid #7537E7;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette6 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #7537E7;
+    border-right: 2px solid #35C9FF;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette6 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #7537E7;
+    border-right: 4px solid #35C9FF;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette6 {
+    -webkit-animation: gradient-ghost-btn-animation-palette6 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette6 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette6 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette6 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette6 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette6 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette6 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette6 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #35C9FF;
+        border-right: 2px solid #7537E7;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #7537E7;
+        border-right: 2px solid #35C9FF;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #35C9FF;
+        border-right: 2px solid #7537E7;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette6 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #35C9FF;
+        border-right: 4px solid #7537E7;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #7537E7;
+        border-right: 4px solid #35C9FF;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #35C9FF;
+        border-right: 4px solid #7537E7;
+    }
+}
+
+/*
+    color scheme: palette7
+    1. #E2336E    2. #7537E7
+*/
+
+.gradient-btn.gradient-color-palette7 {
+    background: #cf1c2a;
+    background: -moz-linear-gradient(45deg, #E2336E 0%, #7537E7 44%, #7537E7 56%, #E2336E 100%);
+    background: -webkit-linear-gradient(45deg, #E2336E 0%, #821b0a 44%, #491c20 56%, #E2336E 100%);
+    background: linear-gradient(45deg, #E2336E 0%, #461b1f 44%, #420f0c 56%, #E2336E 100%);
+    background-size: 150% 150%;
+}
+
+.gradient-btn:hover.gradient-color-palette7 {
+    background-position: 100% 50%;
+}
+
+.gradient-ghost-btn.gradient-color-palette7,
+.gradient-ghost-btn-lg.gradient-color-palette7 {
+    border-left: 2px solid #E2336E;
+    border-right: 2px solid #7537E7;
+    background-image: -webkit-linear-gradient(left, #E2336E 0%, #7537E7 50%, #E2336E 100%),
+    -webkit-linear-gradient(left, #E2336E 0%, #7537E7 50%, #E2336E 100%);
+    background-image: linear-gradient(to right, #E2336E 0%, #7537E7 50%, #E2336E 100%),
+    linear-gradient(to right, #E2336E 0%, #7537E7 50%, #E2336E 100%);
+}
+
+.gradient-ghost-btn-lg.gradient-color-palette7 {
+    border-radius: 2px;
+    border-left: 4px solid #E2336E;
+    border-right: 4px solid #7537E7;
+    background-size: 200% 4px;
+}
+
+.gradient-ghost-btn:hover.gradient-color-palette7 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 2px solid #7537E7;
+    border-right: 2px solid #E2336E;
+}
+
+.gradient-ghost-btn-lg:hover.gradient-color-palette7 {
+    background-position: 100% 100%, 100% 0;
+    border-left: 4px solid #7537E7;
+    border-right: 4px solid #E2336E;
+}
+
+.gradient-ghost-btn.live.gradient-color-palette7 {
+    -webkit-animation: gradient-ghost-btn-animation-palette7 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-animation-palette7 3s ease infinite;
+    animation: gradient-ghost-btn-animation-palette7 3s ease infinite;
+}
+
+.gradient-ghost-btn-lg.live.gradient-color-palette7 {
+    -webkit-animation: gradient-ghost-btn-lg-animation-palette7 3s ease infinite;
+    -moz-animation: gradient-ghost-btn-lg-animation-palette7 3s ease infinite;
+    animation: gradient-ghost-btn-lg-animation-palette7 3s ease infinite;
+}
+
+@keyframes gradient-ghost-btn-animation-palette7 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #E2336E;
+        border-right: 2px solid #7537E7;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 2px solid #7537E7;
+        border-right: 2px solid #E2336E;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 2px solid #E2336E;
+        border-right: 2px solid #7537E7;
+    }
+}
+
+@keyframes gradient-ghost-btn-lg-animation-palette7 {
+    0% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #E2336E;
+        border-right: 4px solid #7537E7;
+    }
+    50% {
+        background-position: 100% 100%, 100% 0;
+        border-left: 4px solid #7537E7;
+        border-right: 4px solid #E2336E;
+    }
+    100% {
+        background-position: 0 100%, 0 0;
+        border-left: 4px solid #E2336E;
+        border-right: 4px solid #7537E7;
+    }
+}
