@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule ^home$ /index.php [L]
+RewriteRule ^account/manage$ /account.php [L]
+RewriteRule ^account/store$ /store.php [L]
+RewriteRule ^account/store/items$ /item.php [L]
+RewriteRule ^account/creation$ /register.php [L]
+RewriteRule ^account/login$ /login.php [L]
+RewriteRule ^account/logout$ /logout.php [L]
+RewriteRule ^changelog$ /changelog.php [L]
+RewriteRule ^connect$ /connect.php [L]
+RewriteRule ^conduct$ /conduct.php [L]
+RewriteRule ^leaderboard$ /leaderboard.php [L]
+RewriteRule ^online$ /online.php [L]
+RewriteRule ^top50$ /top.php [L]
+ErrorDocument 404 http://lightbringer-project.ga/404.php
